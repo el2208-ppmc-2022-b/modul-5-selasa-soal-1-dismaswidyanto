@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "-1",
+      "output": "Input Tidak Valid!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "2",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "0",
+      "output": "Input Tidak Valid!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "2\r\n1\r\n2",
+      "output": "Hasil Piramida Penjumlahan :\r\n3\r\n1, 2",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "4",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "5\r\n1\r\n2\r\n3\r\n4\r\n5",
+      "output": "Hasil Piramida Penjumlahan :\r\n48\r\n20, 28\r\n8, 12, 16\r\n3, 5, 7, 9\r\n1, 2, 3, 4, 5",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "5",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "3\r\n-1\r\n-1\r\n5",
+      "output": "Hasil Piramida Penjumlahan :\r\n2\r\n-2, 4\r\n-1, -1, 5",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "6",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "4\r\n10\r\n-10\r\n20\r\n-20",
+      "output": "Hasil Piramida Penjumlahan :\r\n20\r\n10, 10\r\n0, 10, 0\r\n10, -10, 20, -20",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "7",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "10\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1",
+      "output": "Hasil Piramida Penjumlahan :\r\n512\r\n256, 256\r\n128, 128, 128\r\n64, 64, 64, 64\r\n32, 32, 32, 32, 32\r\n16, 16, 16, 16, 16, 16\r\n8, 8, 8, 8, 8, 8, 8\r\n4, 4, 4, 4, 4, 4, 4, 4\r\n2, 2, 2, 2, 2, 2, 2, 2, 2\r\n1, 1, 1, 1, 1, 1, 1, 1, 1, 1",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "8",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "5\r\n1000\r\n100\r\n10\r\n0\r\n-10",
+      "output": "Hasil Piramida Penjumlahan :\r\n1450\r\n1330, 120\r\n1210, 120, 0\r\n1100, 110, 10, -10\r\n1000, 100, 10, 0, -10",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "9",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "20\r\n1\r\n2\r\n3\r\n4\r\n5\r\n6\r\n7\r\n8\r\n9\r\n10\r\n11\r\n12\r\n13\r\n14\r\n15\r\n16\r\n17\r\n18\r\n19\r\n20",
+      "output": "Hasil Piramida Penjumlahan :\r\n5505024\r\n2621440, 2883584\r\n1245184, 1376256, 1507328\r\n589824, 655360, 720896, 786432\r\n278528, 311296, 344064, 376832, 409600\r\n131072, 147456, 163840, 180224, 196608, 212992\r\n61440, 69632, 77824, 86016, 94208, 102400, 110592\r\n28672, 32768, 36864, 40960, 45056, 49152, 53248, 57344\r\n13312, 15360, 17408, 19456, 21504, 23552, 25600, 27648, 29696\r\n6144, 7168, 8192, 9216, 10240, 11264, 12288, 13312, 14336, 15360\r\n2816, 3328, 3840, 4352, 4864, 5376, 5888, 6400, 6912, 7424, 7936\r\n1280, 1536, 1792, 2048, 2304, 2560, 2816, 3072, 3328, 3584, 3840, 4096\r\n576, 704, 832, 960, 1088, 1216, 1344, 1472, 1600, 1728, 1856, 1984, 2112\r\n256, 320, 384, 448, 512, 576, 640, 704, 768, 832, 896, 960, 1024, 1088\r\n112, 144, 176, 208, 240, 272, 304, 336, 368, 400, 432, 464, 496, 528, 560\r\n48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 272, 288\r\n20, 28, 36, 44, 52, 60, 68, 76, 84, 92, 100, 108, 116, 124, 132, 140, 148\r\n8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76\r\n3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39\r\n1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "5\r\n0\r\n0\r\n0\r\n0\r\n0",
+      "output": "Hasil Piramida Penjumlahan :\r\n0\r\n0, 0\r\n0, 0, 0\r\n0, 0, 0, 0\r\n0, 0, 0, 0, 0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
