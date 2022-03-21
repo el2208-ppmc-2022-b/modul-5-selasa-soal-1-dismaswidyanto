@@ -11,20 +11,44 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-	
-	//template input
+void SegitigaRec(int arr[] , int n) {
+	if (n < 1) {
+	  return;
+	}
+	int temp[n - 1];
+	for (int i = 0; i < n - 1; i++) {
+	  int x = arr[i] + arr[i + 1];
+	  temp[i] = x;
+	}
+	SegitigaRec(temp, n - 1);
+	for (int i = 0; i < n ; i++) {
+	  if(i == n - 1)
+		 printf("%d ",arr[i]);
+	  else
+		 printf("%d, ",arr[i]);
+	}
+	printf("\n");
+}
+
+int main() {
+	int size;
 	printf("Program Piramida Penjumlahan\n");
 	printf("Silahkan masukkan jumlah angka yang akan diinput: ");
-	printf("\nSilahkan masukkan %d input: \n", ...);
-	printf("Input ke-%d : ", ...);
+	scanf("%d", &size);
 	
-	//template output
-	printf("\nHasil Piramida Penjumlahan :\n");
-	printf("%d ",...);
-	printf("%d, ",...);
-	printf("\n");
-	printf("Input Tidak Valid!");
-
+	if (size > 0){
+		int inputN[size];
+		printf("\nSilahkan masukkan %d input: \n", size);
+		for (int i = 0; i < size; i++){
+			printf("Input ke-%d : ", i+1);
+			scanf("%d", &inputN[i]);
+		}
+		printf("\nHasil Piramida Penjumlahan :\n");
+		SegitigaRec(inputN, size);
+	}
+	else{
+		printf("Input Tidak Valid!");
+	}
 	return 0;
 }
+
